@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+	<title>TPSY - BAC Calculator</title>
+
+	<!-- Fancy Sheets-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	
+	<script>
+		  $(document).ready(function() {
+    		$('select').material_select();
+  		  });
+	</script>
+
+</head>
+<body>
+	<nav class="cyan accent-3" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">TPSY</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="about.html">About Us</a></li>
+			</ul>
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="about.html">About Us</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+		</div>
+	</nav>
+
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<br><br>
+			<div class="header center"><img src="img/tpsy.png" class="logo"></div>
+			<div class="row center">
+				<h5 class="header col s12 light">Find a bar near you or if you can safely drive home!</h5>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="row">
+		<form class="col s8 offset-s2">
+			<div class="row">
+				<div class="input-field col s4">
+					<input id="height" type="text" class="validate">
+					<label for="height">Height?</label>
+				</div>
+				<div class="input-field col s4">
+					<input id="weight" type="text" class="validate">
+					<label for="weight">Weight?</label>
+				</div>
+				<div class="input-field col s4">
+					<select>
+						<option value="" disabled selected>Sex?</option>
+						<option value="1">Male</option>
+						<option value="2">Female</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s6">
+					<select>
+						<option value="" disabled selected>I Had a...</option>
+						<option value="1">Beer</option>
+						<option value="2">Glass of Wine</option>
+						<option value="3">Liquor</option>
+					</select>
+					<label>Beer? Wine? Liquor?</label>
+				</div>
+
+				<div class="input-field col s6">
+					<input id="drinks" type="text" class="validate">
+					<label for="drinks">How Many?</label>
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row center">
+				<a href="bac.html" id="download-button" class="btn-large waves-effect waves-light cyan accent-3">What's My BAC!</a>
+			</div>
+		</form>
+	</div>
+
+	<br>
+
+	<footer class="page-footer cyan accent-3">
+		<div class="footer-copyright">
+			<div class="container">
+				Made by <a class="white-text" href="about.html">The TPSY Team</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Spells -->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/bac.js"></script>
+
+</body>
+</html>
